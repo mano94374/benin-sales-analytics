@@ -1,6 +1,6 @@
-# 🇧🇯 Benin Sales Analytics
+# Benin Sales Analytics 📊
 
-## 📊 Présentation du projet
+## Présentation du projet
 
 **Benin Sales Analytics** est un projet d'analyse de données commerciales réalisé avec Python.
 
@@ -8,9 +8,7 @@ L'objectif est d'analyser les ventes d'une entreprise au Bénin afin d'identifie
 
 Le projet comprend également un dashboard interactif permettant de visualiser les principaux indicateurs commerciaux.
 
----
-
-## 🎯 Objectifs
+## Objectifs
 
 Ce projet permet de :
 
@@ -21,13 +19,11 @@ Ce projet permet de :
 * Étudier l'évolution mensuelle du chiffre d'affaires
 * Identifier les valeurs potentiellement aberrantes
 * Calculer plusieurs KPI commerciaux
-* Produire des graphiques d'analyse
-* Générer un rapport Excel
+* Produire des visualisations
+* Générer des rapports Excel
 * Créer un dashboard interactif avec Streamlit
 
----
-
-## 🗂️ Structure du projet
+## Structure du projet
 
 ```text
 benin-sales-analytics/
@@ -49,21 +45,17 @@ benin-sales-analytics/
 └── requirements.txt
 ```
 
----
-
-## 🛠️ Technologies utilisées
+## Technologies utilisées
 
 * **Python**
 * **Pandas** — manipulation et analyse des données
 * **Matplotlib** — visualisation des données
-* **Plotly** — graphiques interactifs
+* **Plotly** — création de graphiques interactifs
 * **Streamlit** — création du dashboard
 * **Excel** — export et présentation des résultats
-* **Git / GitHub** — gestion et partage du projet
+* **Git / GitHub** — gestion de versions et partage du projet
 
----
-
-## 📈 Principaux résultats
+## Principaux résultats
 
 L'analyse porte sur **12 ventes**.
 
@@ -83,7 +75,7 @@ L'analyse porte sur **12 ventes**.
 
 ### Performance des produits
 
-L'ordinateur génère près de **49,1 % du chiffre d'affaires total**, tandis que la souris représente le plus grand volume de ventes mais une contribution beaucoup plus faible au chiffre d'affaires.
+L'ordinateur génère environ **49,1 % du chiffre d'affaires total**, tandis que la souris représente le plus grand volume de ventes mais une contribution beaucoup plus faible au chiffre d'affaires.
 
 Cela montre qu'un produit vendu en grande quantité n'est pas nécessairement celui qui génère le plus de revenus.
 
@@ -93,37 +85,17 @@ Cela montre qu'un produit vendu en grande quantité n'est pas nécessairement ce
 
 ### Évolution mensuelle
 
-Le chiffre d'affaires évolue de la manière suivante :
+| Mois         | Chiffre d'affaires |
+| ------------ | -----------------: |
+| Janvier 2026 |     2 030 000 FCFA |
+| Février 2026 |     2 466 000 FCFA |
+| Mars 2026    |     1 000 000 FCFA |
 
-* Janvier : **2 030 000 FCFA**
-* Février : **2 466 000 FCFA**
-* Mars : **1 000 000 FCFA**
+Le chiffre d'affaires augmente entre janvier et février, puis diminue fortement en mars.
 
-Le chiffre d'affaires augmente de janvier à février, puis diminue fortement en mars.
+Cette baisse s'explique notamment par l'absence de ventes d'ordinateurs en mars, alors que l'ordinateur est le produit contribuant le plus au chiffre d'affaires.
 
-L'analyse montre notamment qu'aucune vente d'ordinateur n'est enregistrée en mars, alors que l'ordinateur est le produit contribuant le plus au chiffre d'affaires.
-
----
-
-## 📊 Dashboard
-
-Le projet contient un dashboard interactif développé avec **Streamlit** permettant de filtrer les données par :
-
-* Ville
-* Produit
-
-et de visualiser notamment :
-
-* Le chiffre d'affaires total
-* Les unités vendues
-* Le CA moyen par vente
-* Le produit le plus performant
-* Le CA par produit
-* Le CA par ville
-
----
-
-## 🔍 Contrôle et qualité des données
+## Qualité et contrôle des données
 
 Plusieurs contrôles ont été réalisés :
 
@@ -137,11 +109,27 @@ Plusieurs contrôles ont été réalisés :
 * Détection des valeurs aberrantes avec la méthode IQR
 * Vérification du calcul du chiffre d'affaires
 
-Aucune valeur manquante, aucun doublon et aucune valeur négative ou nulle n'ont été détectés dans les données analysées.
+Les données analysées ne contiennent aucune valeur manquante, aucun doublon et aucune quantité ou prix inférieur ou égal à zéro.
 
----
+## Dashboard
 
-## 🚀 Installation
+Le projet contient un dashboard interactif développé avec **Streamlit**.
+
+Il permet notamment de filtrer les données par :
+
+* Ville
+* Produit
+
+et de visualiser :
+
+* Le chiffre d'affaires total
+* Les unités vendues
+* Le CA moyen par vente
+* Le produit le plus performant
+* Le chiffre d'affaires par produit
+* Le chiffre d'affaires par ville
+
+## Installation
 
 Cloner le projet :
 
@@ -168,17 +156,13 @@ Installer les dépendances :
 pip install -r requirements.txt
 ```
 
----
-
-## ▶️ Exécution de l'analyse
+## Exécution de l'analyse
 
 ```bash
 python3 src/analysis.py
 ```
 
----
-
-## 📊 Lancer le dashboard
+## Lancer le dashboard
 
 ```bash
 streamlit run src/dashboard.py
@@ -186,9 +170,7 @@ streamlit run src/dashboard.py
 
 Le dashboard sera ensuite accessible depuis le navigateur.
 
----
-
-## 👨‍💻 Auteur
+## Auteur
 
 **Emmanuel**
 
